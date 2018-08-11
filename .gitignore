@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+main.css

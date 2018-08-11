@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link href="css/main.css" rel="stylesheet"></link>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <section id="header">
+    </section>
+
+    <section id="body">
+      <div id="buttons">
+        <a class="btn">Opção 1</a>
+        <a class="btn">Opção 2</a>
+        <a class="btn">Opção 3</a>
+        <a class="btn">Opção 4</a>
+      </div>
+    </section>
 
     <script>
-      // You can also require other files to run in this process
       require('./renderer.js')
     </script>
   </body>
