@@ -11,10 +11,10 @@ python.stdout.on('data', function(data) {
   answer.innerText = data;
 });
 
-let functionInput = document.querySelector('#function');
+/*let functionInput = document.querySelector('#function');
 document.querySelectorAll('.btn').forEach((btn, i) => btn.addEventListener('click', () => {
   if (i == 0)
     python.stdin.write('set ' + functionInput.value + '\n');
   else
     python.stdin.write('execute ' + (i - 1) + '\n');
-}));
+}));*/

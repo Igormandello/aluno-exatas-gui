@@ -6,26 +6,247 @@
     <link href="css/main.css" rel="stylesheet"></link>
   </head>
   <body>
-    <section id="header">
-      Aluno_exatas GUI
-    </section>
-
-    <section id="body">
-      <input id="function" type="text" placeholder="Função">
-
-      <div id="buttons">
-        <a class="btn">Atribuir Função</a>
-        <a class="btn">Função principal</a>
-        <a class="btn">Variáveis</a>
-        <a class="btn">Propagação</a>
-        <a class="btn">Incertezas</a>
+    <header>
+      <img src="imgs/logo.png" alt="logo">
+      <div>
+        <img src="imgs/minimize.png" alt="" />
+        <img src="imgs/maximize.png" alt="" />
+        <img src="imgs/close.png" alt="" />
       </div>
-
-      <p id="answer"></p>
+    </header>
+    <section>
+      <a>Física Experimental</a>
+      <a>Calculo Numérico</a>
+      <a>Circuitos Elétricos</a>
     </section>
+    <div>
+      <section>
+        <h1>Bem vindo!</h1>
+        <h2>O que é esse sistema?</h2>
+        <p>
+          Esse sistema tem como objetivo auxiliar alunos de exatas com os trabalhos 
+          do seu curso. Atualmente, contém funções para os assuntos: <b>Física Experimental</b>
+          , <b>Calculo Numérico</b> e <b>Circuitos Elétricos</b>, basta escolher 
+          qual você precisa no menu acima.
+        </p>
+        <p>
+          O sistema é completamente <i>open source</i> e está aberto para sugestões de melhorias, os
+          links para os repositórios no GitHub estão presentes no rodapé.
+        </p>
+      </section>
+      <footer>
+        <div>
+          <a>
+            <img src="imgs/github.svg" alt="github" />
+            Módulo em Python
+          </a>
+          <a>
+            <img src="imgs/github.svg" alt="github" />
+            GUI
+          </a>
+        </div>
 
+        <p>
+          Interface feita por <b>Igor Mandello</b> com base no módulo feito por <b>Érico Rolim</b>
+        </p>
+      </footer>
+    </div>
+    <div>
+      <section>
+        <h2>Física Experimental</h2>
+        <span>
+          Auxílio na automatização da propagação e geração de funções que
+          facilitam a manipulação dos dados medidos
+        </span>
+      </section>
+      <section>
+        <div>
+          <input type="text" />
+          <label>Função</label>
+        </div>
+        <div>
+          <input type="text" />
+          <label>Propagação das incertezas</label>
+        </div>
+      </section>
+      <section>
+        <h3>Valores conhecidos</h3>
+        <div>
+          <select>
+            <option>a</option>
+          </select>
+          <label>Variável</label>
+        </div>
+        :
+        <div>
+          <input type="number" />
+          <label>Valor</label>
+        </div>
+
+        <div>
+          <select>
+            <option>U<sub>a</sub></option>
+          </select>
+          <label>Incerteza</label>
+        </div>
+        :
+        <div>
+          <input type="number" />
+          <label>Valor</label>
+        </div>
+      </section>
+      <section>
+        <h3>Funções substituídas</h3>
+        <div>
+          <input type="text" />
+          <label>Função substituída</label>
+        </div>
+        <div>
+          <input type="text" />
+          <label>Propagação substituída</label>
+        </div>
+      </section>
+      <section>
+        <h3>Derivar e Integrar</h3>
+        <div>
+          <div>
+            <select>
+              <option>a</option>
+            </select>
+            <label>Derivar em relação a</label>
+          </div>
+          <div>
+            <input type="number" />
+            <label>Avaliar no ponto <input type="checkbox" /></label>
+          </div>
+          <div>
+            <input type="number" />
+            <label>Índice <input type="checkbox" /></label>
+          </div>
+          <div>
+            <input type="text" />
+            <label>
+              Derivada 
+              <div>
+                Substituir valores conhecidos
+                <input type="checkbox">
+              </div>
+            </label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <select>
+              <option>a</option>
+            </select>
+            <label>Integrar em relação a</label>
+          </div>
+          <div>
+            <input type="number" />
+            e
+            <input type="number" />
+            <label>Avaliar entre <input type="checkbox" /></label>
+          </div>
+          <div>
+            <input type="text" />
+            <label>
+              Integral 
+              <div>
+                Substituir valores conhecidos
+                <input type="checkbox">
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>Calculo Numérico</h2>
+        <span>
+          Auxílio aos conceitos aprendidos em aula, com aproximações 
+          sucessivas para achar o zero de funções
+        </span>
+      </section>
+      <section>
+        <div>
+          <a>Secante</a>
+          <a>Newton</a>
+          <a>Bissecção</a>
+        </div>
+        <div>
+          <input type="number" />
+          <label>Iterações</label>
+        </div>
+      </section>
+      <section>
+        <div>
+          <input type="text" />
+          <label>Função</label>
+        </div>
+        <div>
+          <input type="number" />
+          <label>Aproximação x<sub>0</sub></label>
+        </div>
+        <div>
+          <input type="number" />
+          <label>Aproximação x<sub>1</sub></label>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>x<sub>0</sub> = -0.73908513 ou x<sub>1</sub> = -0.73908513</p>
+          <label>Raiz encontrada</label>
+        </div>
+        <img src="imgs/plot1.png" />
+      </section>
+    </div>
+    <div>
+      <section>
+        <h2>Circuitos Elétricos</h2>
+        <span>
+          Auxílio no tratamento de fasores e constantes 
+          relacionadas a componentes simétricas
+        </span>
+      </section>
+      <section>
+        <div>
+          <a>Complexo para polar</a>
+          <a>Polar para complexo</a>
+        </div>
+        <div>
+          <a>Graus</a>
+          <a>Radianos</a>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <div>
+              <input type="number" />
+              <label>Fasor</label>
+            </div>
+            +
+            <input type="number" />
+          </div>
+          <div>
+            <div>
+              <p>5</p>
+              <label>Magnitude</label>
+            </div>
+            <div>
+              <p>53,13°</p>
+              <label>Defasagem</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="imgs/plot2.png" />
+        </div>
+      </section>
+    </div>
     <script>
-      require('./renderer.js')
+      require('./renderer.js');
     </script>
   </body>
 </html>
