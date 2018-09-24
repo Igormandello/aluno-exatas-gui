@@ -1,0 +1,31 @@
+@import '../static/materialize.css';
+
+@font-face {
+  font-family: PTSans;
+  src: url('../static/PTSans.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: PTSans;
+  color: #252525;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  margin-top: 20px;
+  font-size: 2.2rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    align-self: center;
+    height: 2.2rem;
+    width: 1px;
+    background-color: #252525;
+  }
+}
