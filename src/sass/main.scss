@@ -1,6 +1,6 @@
 @import '../static/materialize.css';
-$purple: #6557D2;
-$light-purple: rgb(125, 113, 255);
+@import './consts';
+@import './home';
 
 @font-face {
   font-family: PTSans;
@@ -40,7 +40,7 @@ header {
 
   .header {
     display: inline-flex;
-    height: 40px;
+    height: $header-height;
     width: 100%;
     background-color: $purple;
     -webkit-app-region: drag;
@@ -57,7 +57,7 @@ header {
       -webkit-app-region: no-drag;
 
       img {
-        width: 40px;
+        width: $header-height;
         height: 100%;
         padding: 12px;
         cursor: pointer;
@@ -74,7 +74,7 @@ header {
 
   .subheader {
     display: flex;
-    height: 80px;
+    height: $subheader-height;
     cursor: pointer;
     background-color: #FFF;
   
@@ -84,59 +84,7 @@ header {
       font-size: 1.6rem;
       text-align: center;
       color: #252525;
-      line-height: 80px;
-    }
-  }
-}
-
-.home {
-  section {
-    height: calc(100vh -  40px - 80px - 40px);
-    padding: 20px calc(100vw / 12 + 20px);
-
-    h1 {
-      text-align: center;
-    }
-
-    p {
-      font-size: 1.4rem;
-    }
-  }
-
-  footer {
-    display: inline-flex;
-    width: 100%;
-    height: 40px;
-    padding: 6px 10px;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    div {
-      display: inherit;
-      height: 100%;
-
-      a {
-        display: inherit;
-        color: #4c4c4c;
-        height: 100%;
-        margin-right: 15px;
-        align-items: flex-end;
-  
-        img {
-          height: 100%;
-          margin-right: 5px;
-        }
-      }
-    }
-
-    p {
-      font-style: italic;
-      margin: 0;
-      color: #4c4c4c;
-
-      & b {
-        color: $light-purple;
-      }
+      line-height: $subheader-height;
     }
   }
 }

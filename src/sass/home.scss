@@ -1,0 +1,52 @@
+@import './consts';
+.home {
+  section {
+    height: calc(100vh - #{$header-height + $subheader-height + $footer-height});
+    padding: 20px calc(100vw / 12 + 20px);
+    
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  footer {
+    display: inline-flex;
+    width: 100%;
+    height: $footer-height;
+    padding: 6px 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    div {
+      display: inherit;
+      height: 100%;
+
+      a {
+        display: inherit;
+        color: #4c4c4c;
+        height: 100%;
+        margin-right: 15px;
+        align-items: flex-end;
+
+        img {
+          height: 100%;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    p {
+      font-style: italic;
+      margin: 0;
+      color: #4c4c4c;
+
+      b {
+        color: $light-purple;
+      }
+    }
+  }
+}
