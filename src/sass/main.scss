@@ -1,6 +1,9 @@
 @import './materialize/materialize';
 @import './consts';
 @import './home';
+@import './experimentalPhysics';
+@import './numericalCalculations';
+@import './electricCircuits';
 
 @font-face {
   font-family: PTSans;
@@ -32,6 +35,80 @@ h2 {
     width: 2px;
     margin-right: 4px;
     background-color: #252525;
+  }
+}
+
+a {
+  color: #252525;
+}
+
+.switch {
+  display: flex;
+  background-color: #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+  a {
+    flex: 1;
+    padding: 12px 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: #F6F6F6;
+    }
+
+    &.active {
+      border-bottom: 3px solid $purple;
+    }
+  }
+}
+
+.inline-input {
+  display: inline-flex;
+  align-items: center;
+
+  span {
+    margin: 0 10px;
+    font-size: 1.8rem;
+  }
+
+  .input-field {
+    input {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+section {
+  display: inline-flex;
+  padding: 0 calc(100vw / 12 + 20px);
+  width: 100%;
+
+  & > div {
+    flex: 1;
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &.info {
+    display: block;
+
+    span {
+      font-style: italic;
+      color: #4c4c4c;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: 20px;
   }
 }
 
@@ -77,13 +154,14 @@ header {
     height: $subheader-height;
     cursor: pointer;
     background-color: #FFF;
+    margin-top: 0;
+    padding: 0;
   
     a {
       flex: 1;
       font-weight: bold;
       font-size: 1.6rem;
       text-align: center;
-      color: #252525;
       line-height: $subheader-height;
     }
   }

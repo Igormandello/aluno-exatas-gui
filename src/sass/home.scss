@@ -1,9 +1,14 @@
 @import './consts';
+
 .home {
+  display: none;
+
   section {
+    display: block;
     height: calc(100vh - #{$header-height + $subheader-height + $footer-height});
-    padding: 20px calc(100vw / 12 + 20px);
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     h1 {
       text-align: center;
     }

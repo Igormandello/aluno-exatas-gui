@@ -53,7 +53,7 @@
         </p>
       </footer>
     </div>
-    <div>
+    <div class="experimentalPhysics">
       <section>
         <h2>Física Experimental</h2>
         <span>
@@ -162,7 +162,7 @@
         </div>
       </section>
     </div>
-    <div>
+    <div class="numericalCalculations">
       <section>
         <h2>Calculo Numérico</h2>
         <span>
@@ -203,8 +203,8 @@
         <img src="imgs/plot1.png" />
       </section>
     </div>
-    <div>
-      <section>
+    <div class="electricCircuits">
+      <section class="info">
         <h2>Circuitos Elétricos</h2>
         <span>
           Auxílio no tratamento de fasores e constantes 
@@ -212,33 +212,37 @@
         </span>
       </section>
       <section>
-        <div>
-          <a>Complexo para polar</a>
+        <div class="switch">
+          <a class="active">Complexo para polar</a>
           <a>Polar para complexo</a>
         </div>
-        <div>
-          <a>Graus</a>
+        <div class="switch">
+          <a class="active">Graus</a>
           <a>Radianos</a>
         </div>
       </section>
-      <section>
+      <section class="inputs">
         <div>
-          <div>
-            <div>
-              <input type="number" />
-              <label>Fasor</label>
+          <div class="inline-input">
+            <div class="input-field">
+              <input type="number" id="phasorInt"/>
+              <label for="phasorInt">Fasor</label>
             </div>
+            <span>
             +
-            <input type="number" />
-          </div>
-          <div>
-            <div>
-              <p>5</p>
-              <label>Magnitude</label>
+            </span>
+            <div class="input-field">
+              <input type="number" id="phasorComplex"/>
             </div>
-            <div>
-              <p>53,13°</p>
-              <label>Defasagem</label>
+          </div>
+          <div class="inline-input">
+            <div class="input-field">
+              <input value="5" type="text" id="magnitude" readonly/>
+              <label for="magnitude">Magnitude</label>
+            </div>
+            <div class="input-field">
+              <input value="53,13°" type="text" id="lag" readonly/>
+              <label for="lag">Defasagem</label>
             </div>
           </div>
         </div>
