@@ -1,5 +1,47 @@
 @import './consts';
 
 .numericalCalculations {
-  display: none;
+  //display: none;
+
+  section {
+		&:first-child {
+			padding-top: 10px;
+		}
+		
+		&:nth-child(2) {
+      .switch {
+        max-width: calc(100vw * 5 / 12 - 10px);
+      }
+      .input-field {
+        margin-left: auto;
+        max-width: calc(100vw * 2 / 12);
+      }
+    }
+    
+    &:nth-child(3) {
+      .input-field {
+        max-width: calc(100vw * 2 / 12);
+
+        &:first-child {
+          max-width: calc(100vw * 5 / 12);
+        }
+      }
+    }
+    
+    &:nth-child(4) {
+      flex-direction: column;
+
+      p {
+        font-size: 2rem;
+      }
+
+      img {
+        width: calc(100vw * 5 / 12);
+        height: height;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+	}
 }

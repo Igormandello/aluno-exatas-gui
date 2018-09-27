@@ -1,6 +1,8 @@
 @import './consts';
 
 .electricCircuits {
+	display: none;
+
   section {
 		&:first-child {
 			padding-top: 10px;
