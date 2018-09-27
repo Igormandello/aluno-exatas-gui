@@ -77,6 +77,29 @@ a {
     input {
       font-size: 1.8rem;
     }
+    
+    /* Spin Buttons modified */
+    input[type=number]::-webkit-outer-spin-button, 
+    input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      background: transparent url('../imgs/updown.svg') no-repeat center center;
+      background-size: .75rem auto;
+      width: .75rem;
+      opacity: .4;
+      position: absolute;
+      top: calc(50% - .75rem);
+      right: 0;
+      bottom: 0;
+      filter: brightness(0);
+      transition: filter 0.4s, opacity 0.4s;
+    }
+
+    input[type=number]::-webkit-inner-spin-button:hover,
+    input[type=number]::-webkit-inner-spin-button:active,
+    input[type=number]:focus::-webkit-inner-spin-button  {
+      opacity: 1;
+      filter: none;
+    }
   }
 }
 
@@ -163,6 +186,16 @@ header {
       font-size: 1.6rem;
       text-align: center;
       line-height: $subheader-height;
+      transition: background-color 0.4s;
+      user-select: none;
+
+      &:hover {
+        background-color: #F6F6F6;
+      }
+  
+      &.active {
+        border-bottom: 3px solid $purple;
+      }
     }
   }
 }
